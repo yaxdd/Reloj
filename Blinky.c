@@ -27,15 +27,13 @@
   MAIN function
  *----------------------------------------------------------------------------*/
 int main (void) {
-  int32_t idx  = -1, dir = 1;
- uint32_t btns = 0;
-
-  SystemCoreClockUpdate();                      /* Get Core Clock Frequency   */
+    SystemCoreClockUpdate();                      /* Get Core Clock Frequency   */
 
   SER_Initialize();
   LED_Initialize();
-  BTN_Initialize();
+  //BTN_Initialize();
   SysTick_Config(SystemCoreClock / 1000ul);     /* Setup SysTick for 1 msec   */
+	test_time();
 	while(1){
 		delay(1000);
 		LED_Toggle(0);
