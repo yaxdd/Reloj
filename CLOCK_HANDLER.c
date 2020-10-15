@@ -24,4 +24,9 @@ void incrementarSegundo(){
 		incrementarMinuto();
 	}
 }
+void configurarHora(uint16_t h,uint16_t m,uint16_t s){
+	segundos = s;
+	minutos = m;
+	horas = h;
+}
 
