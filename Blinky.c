@@ -38,9 +38,11 @@ int main (void) {
 			LED_On(0); // se enciende si algun ciclo scan excede los 250 ms
 		}
 		btns = BTN_Get();
+		//printf("btn: %" PRIu32 "\n",btns);
 		if (btns==1){
 			btn_prog++;
 			if (btn_prog==2){
+				cycle=0;
 				btn_prog=0;
 				LED_On(3);
 				// salimos del ciclo scan
@@ -48,6 +50,10 @@ int main (void) {
 				while(1){
 					initCycle();
 					btns = BTN_Get();
+					if (cycle++%4==0){
+						
+					}
+					//printf("btn: %" PRIu32 "\n",btns);
 					//Quiero salir del modo de programacion?
 					if (btns==1){
 						btn_prog--;
@@ -64,13 +70,19 @@ int main (void) {
 						if (debounceSelector++==1){
 							selector++;
 							debounceSelector=0;
+							printf("Selecionando %d\n",selector);
 						}
 						// btns % 3 nos da el selector deseado
 					}else{
 						debounceSelector=0;
 					}
-					if (btns==3){
+					if (btns==4){
 						programarReloj(selector%3,0);
+						printf("Hora:%d Minutos:%d Segundos:%d\n",horas,minutos,segundos);
+					}
+					if (btns==8){
+						programarReloj(selector%3,1);
+						printf("Hora:%d Minutos:%d Segundos:%d\n",horas,minutos,segundos);
 					}
 					// cambiar hora del usuario
 					waitEndCycle();
@@ -86,6 +98,7 @@ int main (void) {
 		}
 		if (cycle %4 == 0){
 			incrementarSegundo();
+			printf("Hora:%d Minutos:%d Segundos:%d\n",horas,minutos,segundos);
 		}
 		waitEndCycle();
 		

@@ -39,6 +39,7 @@ void programarReloj(uint16_t selector,uint16_t flag){
 					horas--;
 				}	
 			};
+			break;
 		case 1:
 			if (flag){
 				minutos++;
@@ -52,6 +53,7 @@ void programarReloj(uint16_t selector,uint16_t flag){
 					minutos--;
 				}	
 			};
+			break;
 		case 2:
 			if (flag){
 				segundos++;
@@ -65,7 +67,7 @@ void programarReloj(uint16_t selector,uint16_t flag){
 					segundos--;
 				}	
 			};
-			
+			break;
 	}
 }
 
