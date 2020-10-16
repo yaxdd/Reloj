@@ -1,0 +1,14 @@
+--cpu=Cortex-M4.fp.sp
+".\ram\retarget.o"
+".\ram\serial.o"
+".\ram\btn.o"
+".\ram\led.o"
+".\ram\blinky.o"
+".\ram\systick.o"
+".\ram\clock_handler.o"
+".\ram\startup_tm4c129.o"
+".\ram\system_tm4c129.o"
+--strict --scatter ".\RAM\Blinky.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list ".\RAM\Blinky.map" -o .\RAM\Blinky.axf

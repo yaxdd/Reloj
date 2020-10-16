@@ -1,0 +1,16 @@
+.\ram\blinky.o: Blinky.c
+.\ram\blinky.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdio.h
+.\ram\blinky.o: C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h
+.\ram\blinky.o: C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h
+.\ram\blinky.o: C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h
+.\ram\blinky.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\stdint.h
+.\ram\blinky.o: C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h
+.\ram\blinky.o: C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h
+.\ram\blinky.o: C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h
+.\ram\blinky.o: C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h
+.\ram\blinky.o: Serial.h
+.\ram\blinky.o: LED.h
+.\ram\blinky.o: BTN.h
+.\ram\blinky.o: SYSTICK.h
+.\ram\blinky.o: CLOCK_HANDLER.h
+.\ram\blinky.o: C:\Keil_v5\ARM\ARMCC\Bin\..\include\inttypes.h

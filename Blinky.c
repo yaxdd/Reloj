@@ -17,6 +17,7 @@ int main (void) {
 	uint32_t cycle =0;
   SER_Initialize();
   LED_Initialize();
+	//ENABLE_PORTA();
   //BTN_Initialize();
 	//inicializamos el manejador de systick en 1 ms
   initSysTick1ms();
@@ -30,6 +31,8 @@ int main (void) {
 		cycle++;
 		//actualizar 
 	}
+	disableSysTick();
+	enableSysTick();
 	// ahora evaluamos de forma normal
 	while(1){
 		initCycle();

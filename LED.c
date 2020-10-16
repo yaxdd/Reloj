@@ -21,17 +21,15 @@ const uint32_t led_mask[] = { 1UL << 1, 1UL << 0, 1UL << 4, 1UL << 0  };
 /*----------------------------------------------------------------------------
   initialize LED Pins (GPION1, GPION0, GPIOF0, GPIOF4)
  *----------------------------------------------------------------------------*/
-void LED_Initialize (void) {
 
-  /* Enable clock and init GPIO outputs */
-  SYSCTL->RCGCGPIO |= (1UL << 12) | (1UL << 5);  /* enable clock for GPIOs    */
+void LED_Initialize(void){
+	SYSCTL->RCGCGPIO |= (1UL << 12) | (1UL << 5);  /* enable clock for GPIOs    */
   GPION->DIR     |= led_mask[0] | led_mask[1];   /* PN1, PN0 is output        */
   GPION->DEN     |= led_mask[0] | led_mask[1];   /* PN1, PN0 is digital func. */
   GPIOF_AHB->DIR |= led_mask[2] | led_mask[3];   /* PF4, PF0 is output        */
   GPIOF_AHB->DEN |= led_mask[2] | led_mask[3];   /* PF4, PF0 is digital func. */
 
 }
-
 /*----------------------------------------------------------------------------
   Function that turns on requested LED
  *----------------------------------------------------------------------------*/

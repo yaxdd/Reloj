@@ -1,0 +1,87 @@
+Dependencies for Project 'Blinky', Target 'TM4C129 RAM': (DO NOT MODIFY !)
+CompilerVersion: 5060960::V5.06 update 7 (build 960)::.\ARMCC
+F (.\Retarget.c)(0x530FA788)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_RAM-IC:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="532" -D_RTE_ -DTM4C1294NCPDT -D_RTE_-o .\ram\retarget.o --omf_browse .\ram\retarget.crf --depend .\ram\retarget.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F643E4C)
+I (C:\Keil_v5\ARM\ARMCC\include\rt_misc.h)(0x5F643E4C)
+I (C:\Keil_v5\ARM\ARMCC\include\stddef.h)(0x5F643E4C)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F643E4C)
+I (Serial.h)(0x530FA788)
+F (.\Serial.c)(0x530FA788)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_RAM-IC:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="532" -D_RTE_ -DTM4C1294NCPDT -D_RTE_-o .\ram\serial.o --omf_browse .\ram\serial.crf --depend .\ram\serial.d)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F643E4C)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0615A)
+I (Serial.h)(0x530FA788)
+F (.\BTN.c)(0x530FA788)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_RAM-IC:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="532" -D_RTE_ -DTM4C1294NCPDT -D_RTE_-o .\ram\btn.o --omf_browse .\ram\btn.crf --depend .\ram\btn.d)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F643E4C)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0615A)
+F (.\LED.c)(0x5F890263)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_RAM-IC:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="532" -D_RTE_ -DTM4C1294NCPDT -D_RTE_-o .\ram\led.o --omf_browse .\ram\led.crf --depend .\ram\led.d)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F643E4C)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0615A)
+I (LED.h)(0x5F890291)
+F (.\Blinky.c)(0x5F89025E)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_RAM-IC:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="532" -D_RTE_ -DTM4C1294NCPDT -D_RTE_-o .\ram\blinky.o --omf_browse .\ram\blinky.crf --depend .\ram\blinky.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F643E4C)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F643E4C)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0615A)
+I (Serial.h)(0x530FA788)
+I (LED.h)(0x5F890291)
+I (BTN.h)(0x530FA788)
+I (SYSTICK.h)(0x5F889F00)
+I (CLOCK_HANDLER.h)(0x5F87D31F)
+I (C:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5F643E4C)
+F (.\SYSTICK.c)(0x5F889EEE)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_RAM-IC:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="532" -D_RTE_ -DTM4C1294NCPDT -D_RTE_-o .\ram\systick.o --omf_browse .\ram\systick.crf --depend .\ram\systick.d)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F643E4C)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0615A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F643E4C)
+I (SYSTICK.h)(0x5F889F00)
+I (C:\Keil_v5\ARM\ARMCC\include\inttypes.h)(0x5F643E4C)
+F (.\CLOCK_HANDLER.c)(0x5F87DE2A)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_RAM-IC:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="532" -D_RTE_ -DTM4C1294NCPDT -D_RTE_-o .\ram\clock_handler.o --omf_browse .\ram\clock_handler.crf --depend .\ram\clock_handler.d)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F87F2)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F643E4C)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0615A)
+I (C:\Keil_v5\ARM\ARMCC\include\stdio.h)(0x5F643E4C)
+I (CLOCK_HANDLER.h)(0x5F87D31F)
+F (.\Abstract.txt)(0x530FA1D2)()
+F (RTE\Device\TM4C1294NCPDT\startup_TM4C129.s)(0x530FA1D2)(--cpu Cortex-M4.fp.sp --pd "__EVAL SETA 1" -g --apcs=interwork -I.\RTE\_TM4C129_RAM-IC:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129--pd "__UVISION_VERSION SETA 532" --pd "_RTE_ SETA 1" --pd "TM4C1294NCPDT SETA 1" --pd "_RTE_ SETA 1"--list .\ram\startup_tm4c129.lst --xref -o .\ram\startup_tm4c129.o --depend .\ram\startup_tm4c129.d)
+F (RTE\Device\TM4C1294NCPDT\system_TM4C129.c)(0x530FA1D2)(-c --cpu Cortex-M4.fp.sp -D__EVAL -g -O0 --apcs=interwork -I.\RTE\_TM4C129_RAM-IC:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include-IC:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129-D__UVISION_VERSION="532" -D_RTE_ -DTM4C1294NCPDT -D_RTE_-o .\ram\system_tm4c129.o --omf_browse .\ram\system_tm4c129.crf --depend .\ram\system_tm4c129.d)
+I (C:\Keil_v5\ARM\ARMCC\include\stdint.h)(0x5F643E4C)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C129.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\TM4C1294NCPDT.h)(0x530F5566)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\core_cm4.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_version.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_compiler.h)(0x5E83BD92)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\ARM\CMSIS\5.7.0\CMSIS\Core\Include\cmsis_armcc.h)(0x5E8F87F2)
+I (C:\Users\yax_d\AppData\Local\Arm\Packs\Keil\TM4C_DFP\1.1.0\Device\Include\TM4C129\system_TM4C129.h)(0x51C0615A)

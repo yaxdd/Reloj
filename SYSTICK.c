@@ -60,3 +60,9 @@ void initSysTick1ms(){
 	SystemCoreClockUpdate();                      /* Get Core Clock Frequency   */
 	SysTick_Config(SystemCoreClock / 1000ul);     /* Setup SysTick for 1 msec   */
 }
+void disableSysTick(){
+	SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk;
+}
+void enableSysTick(){
+	SysTick->CTRL |= SysTick_CTRL_ENABLE_Msk;
+}

@@ -9,4 +9,6 @@ extern void waitEndCycle(void);
 extern uint64_t singleTest(int);
 extern void MultipleTest(int);
 extern void initSysTick1ms(void);
+extern void disableSysTick(void);
+extern void enableSysTick(void);
 #endif
