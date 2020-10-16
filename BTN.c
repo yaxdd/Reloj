@@ -33,5 +33,5 @@ void BTN_Initialize (void) {
  *----------------------------------------------------------------------------*/
 uint32_t BTN_Get (void) {
 
-  return (~(GPIOJ_AHB->DATA) & ((1ul << 0) | (1ul << 1)));
+  return (~(GPIOJ_AHB->DATA)& ((1ul << 0) | (1ul << 1)));
 }

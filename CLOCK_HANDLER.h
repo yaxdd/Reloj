@@ -6,4 +6,5 @@ extern volatile uint16_t horas;
 extern void incrementarHora(void);
 extern void incrementarMinuto(void);
 extern void incrementarSegundo(void);
+extern void programarReloj(uint16_t,uint16_t);
 #endif

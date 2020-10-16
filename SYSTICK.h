@@ -2,6 +2,7 @@
 #define SYSTICK_H
 extern volatile uint32_t msTicks;
 extern volatile uint32_t curTicks;;
+extern volatile int exceeded_dead_time;
 extern void SysTick_Handler(void);
 extern void delay(uint32_t );
 extern uint32_t  initCycle(void);

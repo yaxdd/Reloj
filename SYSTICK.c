@@ -5,6 +5,7 @@
 volatile uint32_t msTicks;
 volatile uint32_t curTicks;
 const uint32_t MAX_TICKS = 250;
+volatile int exceeded_dead_time = 0;
 void SysTick_Handler(void) {
   msTicks++;
 }
@@ -20,6 +21,9 @@ uint32_t initCycle(void){
 }
 void waitEndCycle (void) {
   while ((msTicks - curTicks) < MAX_TICKS) { __NOP(); }
+	if ((msTicks - curTicks)>MAX_TICKS){
+		exceeded_dead_time=1;
+	}
 }
 
 uint64_t singleTest(int log){
