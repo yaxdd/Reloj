@@ -8,7 +8,7 @@
   <Extensions>
     <cExt>*.c</cExt>
     <aExt>*.s*; *.src; *.a*</aExt>
-    <oExt>*.obj</oExt>
+    <oExt>*.obj; *.o</oExt>
     <lExt>*.lib</lExt>
     <tExt>*.txt; *.h; *.inc; *.md</tExt>
     <pExt>*.plm</pExt>
@@ -262,7 +262,7 @@
         <sRSysVw>1</sRSysVw>
         <tRSysVw>1</tRSysVw>
         <sRunDeb>0</sRunDeb>
-        <sLrtime>0</sLrtime>
+        <sLrtime>1</sLrtime>
         <bEvRecOn>1</bEvRecOn>
         <bSchkAxf>0</bSchkAxf>
         <bTchkAxf>0</bTchkAxf>
@@ -282,7 +282,8 @@
       <TargetDriverDllRegistry>
         <SetRegEntry>
           <Number>0</Number>
-          <Key>DLGUARM</Key>
+          <Key>DLGDARM</Key>
+          <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-1,-1,-1,-1,0)(1009=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -292,17 +293,17 @@
         <SetRegEntry>
           <Number>0</Number>
           <Key>DLGTARM</Key>
-          <Name>(1010=-1,-1,-1,-1,0)(1007=-1,-1,-1,-1,0)(1008=-688,263,-312,499,0)(1009=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0)</Name>
+          <Name>(1010=-1,-1,-1,-1,0)(1007=105,137,292,412,0)(1008=-585,324,-209,560,1)(1009=-1,-1,-1,-1,0)(1012=-1,-1,-1,-1,0)</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
           <Key>ARMDBGFLAGS</Key>
-          <Name></Name>
+          <Name>-T0</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
           <Key>lmidk-agdi</Key>
-          <Name>-U0F00D927 -O4687 -S3 -FO61</Name>
+          <Name>-U0F00D927 -O4943 -S1 -FO61</Name>
         </SetRegEntry>
         <SetRegEntry>
           <Number>0</Number>
@@ -310,7 +311,72 @@
           <Name>-S0 -C0 -P0 -FD20000000 -FC1000 -FN1 -FF0TM4C129_1024 -FS00 -FL01000 -FP0($$Device:TM4C1294NCPDT$Flash\TM4C129_1024.FLM))</Name>
         </SetRegEntry>
       </TargetDriverDllRegistry>
-      <Breakpoint/>
+      <Breakpoint>
+        <Bp>
+          <Number>0</Number>
+          <Type>0</Type>
+          <LineNumber>159</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>2342</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\Blinky.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\Blinky\Blinky.c\159</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>48</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>1806</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\Blinky.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\Blinky\Blinky.c\48</Expression>
+        </Bp>
+        <Bp>
+          <Number>2</Number>
+          <Type>0</Type>
+          <LineNumber>24</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>2504</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\SYSTICK.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>\\Blinky\SYSTICK.c\24</Expression>
+        </Bp>
+        <Bp>
+          <Number>3</Number>
+          <Type>0</Type>
+          <LineNumber>23</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>0</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>0</BreakIfRCount>
+          <Filename>.\SYSTICK.c</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression></Expression>
+        </Bp>
+      </Breakpoint>
       <WatchWindow1>
         <Ww>
           <count>0</count>
@@ -331,6 +397,21 @@
           <count>3</count>
           <WinNumber>1</WinNumber>
           <ItemText>cycle</ItemText>
+        </Ww>
+        <Ww>
+          <count>4</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>SystemCoreClock</ItemText>
+        </Ww>
+        <Ww>
+          <count>5</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>textLCD</ItemText>
+        </Ww>
+        <Ww>
+          <count>6</count>
+          <WinNumber>1</WinNumber>
+          <ItemText>timeTemp</ItemText>
         </Ww>
       </WatchWindow1>
       <MemoryWindow1>
@@ -365,7 +446,7 @@
         <aPa1>0</aPa1>
         <AscS4>0</AscS4>
         <aSer4>0</aSer4>
-        <StkLoc>0</StkLoc>
+        <StkLoc>1</StkLoc>
         <TrcWin>0</TrcWin>
         <newCpu>0</newCpu>
         <uProt>0</uProt>
@@ -383,9 +464,20 @@
       <pszMrulep></pszMrulep>
       <pSingCmdsp></pSingCmdsp>
       <pMultCmdsp></pMultCmdsp>
+      <LogicAnalyzers>
+        <Wi>
+          <IntNumber>0</IntNumber>
+          <FirstString>`msTicks</FirstString>
+          <SecondString>FF00000000000000000000000000000000ABCB40000000000000000000000000000000006D735469636B73000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000300000001000000000000000000E03F0500000000000000000000000000000000000000F4060000</SecondString>
+        </Wi>
+      </LogicAnalyzers>
       <SystemViewers>
         <Entry>
-          <Name>System Viewer\GPIOA_AHB</Name>
+          <Name>System Viewer\GPIOD_AHB</Name>
+          <WinId>35904</WinId>
+        </Entry>
+        <Entry>
+          <Name>System Viewer\GPIOK</Name>
           <WinId>35905</WinId>
         </Entry>
       </SystemViewers>
@@ -482,6 +574,18 @@
       <RteFlg>0</RteFlg>
       <bShared>0</bShared>
     </File>
+    <File>
+      <GroupNumber>1</GroupNumber>
+      <FileNumber>8</FileNumber>
+      <FileType>1</FileType>
+      <tvExp>1</tvExp>
+      <tvExpOptDlg>0</tvExpOptDlg>
+      <bDave2>0</bDave2>
+      <PathWithFileName>.\LCD.c</PathWithFileName>
+      <FilenameWithoutPath>LCD.c</FilenameWithoutPath>
+      <RteFlg>0</RteFlg>
+      <bShared>0</bShared>
+    </File>
   </Group>
 
   <Group>
@@ -492,7 +596,7 @@
     <RteFlg>0</RteFlg>
     <File>
       <GroupNumber>2</GroupNumber>
-      <FileNumber>8</FileNumber>
+      <FileNumber>9</FileNumber>
       <FileType>5</FileType>
       <tvExp>0</tvExp>
       <tvExpOptDlg>0</tvExpOptDlg>

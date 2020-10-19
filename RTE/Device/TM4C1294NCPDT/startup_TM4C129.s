@@ -1014,3 +1014,13 @@ __user_initial_stackheap
 
 
                 END
+AREA |.text|, CODE ,READONLY, ALIGN=2
+			THUMB
+				
+			EXPORT 	UP_LCD	
+				UP_LCD
+		;PRENDO EL PUERTO D---------------------------
+		PUSH {R0,R1,R2,LR}				;SALVO EN LA PILA LO REGISTROS QUE VOY A MODIFICAR
+		;---------------------------------------------------------
+ALIGN
+	END

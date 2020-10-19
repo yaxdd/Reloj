@@ -4,6 +4,7 @@
 volatile uint16_t segundos;
 volatile uint16_t minutos;
 volatile uint16_t horas=12;
+char textLCD[10];
 void incrementarHora(){
 	horas++;
 	if(horas==24){

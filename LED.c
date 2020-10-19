@@ -1,17 +1,6 @@
-/*----------------------------------------------------------------------------
- * Name:    LED.c
- * Purpose: low level LED functions
- * Note(s):
- *----------------------------------------------------------------------------
- * This file is part of the uVision/ARM development tools.
- * This software may only be used under the terms of a valid, current,
- * end user licence from KEIL for a compatible version of KEIL software
- * development tools. Nothing else gives you the right to use this software.
- *
- * This software is supplied "AS IS" without warranties of any kind.
- *
- * Copyright (c) 2014 Keil - An ARM Company. All rights reserved.
- *----------------------------------------------------------------------------*/
+// Control de los leds de la tiva
+// se utilizan los puertos N y F
+// pines N0,N1 F0 y F4
 
 #include <TM4C129.h>
 #include "LED.h"
@@ -29,6 +18,7 @@ void LED_Initialize(void){
   GPIOF_AHB->DIR |= led_mask[2] | led_mask[3];   /* PF4, PF0 is output        */
   GPIOF_AHB->DEN |= led_mask[2] | led_mask[3];   /* PF4, PF0 is digital func. */
 
+	
 }
 /*----------------------------------------------------------------------------
   Function that turns on requested LED

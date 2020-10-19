@@ -17,13 +17,10 @@ void delay (uint32_t time) {
 uint32_t initCycle(void){
 	curTicks = msTicks;
 	return curTicks;
-	//printf("Inicia ciclo\n");
+ 	//printf("Inicia ciclo\n");
 }
 void waitEndCycle (void) {
-  while ((msTicks - curTicks) < MAX_TICKS) { __NOP(); }
-	if ((msTicks - curTicks)>MAX_TICKS){
-		exceeded_dead_time=1;
-	}
+  while ((msTicks - curTicks) < MAX_TICKS) {__NOP();  }
 }
 
 uint64_t singleTest(int log){
@@ -62,7 +59,7 @@ void MultipleTest(int iteraciones){
 }
 void initSysTick1ms(){
 	SystemCoreClockUpdate();                      /* Get Core Clock Frequency   */
-	SysTick_Config(SystemCoreClock / 1000ul);     /* Setup SysTick for 1 msec   */
+	SysTick_Config((SystemCoreClock / 1000ul)+98);     /* Setup SysTick for 1 msec   */
 }
 void disableSysTick(){
 	SysTick->CTRL &= ~SysTick_CTRL_ENABLE_Msk;
